@@ -1,0 +1,247 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height:auto;
+  width:auto;
+  font-family: 'Raleway', sans-serif;
+  }
+
+  
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 75px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #FFDBE4;
+  overflow-x: hidden;
+}
+
+/* Style sidebar links */
+
+.sidebar a {
+  padding: 25px 8px 25px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  text-align: center;
+  background-color: #FFDBE4;
+  z-index:999;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #5B6574;
+  z-index: 999;
+}
+  
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+  /*#bgleft {
+    position: absolute;
+    margin-left: 2%;
+    padding: 0%;
+    border: none;
+    width: 50%; 
+    height: auto; 
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+  }  
+
+  #bgright {
+    position: fixed;
+    margin-left: 50%;
+    padding: 0px;
+    border: none;
+    width: 50%;
+    height:100%; 
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+  }*/
+
+.bgimgs {
+  display: flex;
+  flex-direction: row;
+}
+
+  .backgroundimage {
+    position: absolute;
+      display: flex;
+      width: 50vw;
+      height: 100vh;
+      object-fit: cover;
+      overflow: hidden;
+      z-index: 0;
+  }
+
+  .backgroundimage2 {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: 50%;
+    z-index: 0;
+  }
+
+  .photo {
+    display: flex;
+    position: relative;
+    z-index: 998;
+    padding: 0px;
+    width: 15vw; 
+    height: auto; 
+    max-height: 30vh;
+    border-radius: 150px;  
+    top: 40vh;
+    left: 18%;
+  }
+
+  #photo {
+    border-radius: 150px;
+  }
+
+
+
+  /*#home-title h1, p {
+      position: relative;
+      z-index: 999;
+  }*/
+
+ 
+
+  /*.prenom, .nom, .titre {
+    position: absolute;
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+  }*/
+
+  /*.names {
+    display: flex;
+    position: absolute;
+    align-content: center;
+    right: 35%;
+    left: 34.82%;
+    top: 15%
+  }*/
+
+  /*.prenom, .nom {
+    flex-direction: row;
+  }*/
+
+  .prenom {
+    display: inline-flex;
+    position: absolute;
+      background-color: #FFDBE4;
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px #5B6574;
+      top: 15%;
+      right: 0%;
+      width: 20vw;
+      /*left: 30%;
+      top: -17vh;*/
+      z-index: 1;
+      justify-content: center;
+  }
+
+  /*.namesright {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    left: 0%;
+    z-index: 1;
+    flex-wrap: wrap;
+  }*/
+
+  .nom {
+    display: flex;
+    position: absolute;
+      background-color: #5B6574;
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px #000000;
+      top: 15%;
+      left: 0%;
+      width: 20vw;
+      /*left: 50%;
+      top: -17vh;*/
+      z-index: 1;
+      justify-content: center;
+      
+  }
+
+
+  .titre {
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    text-align: center;
+    color:#5B6574;
+    font-size: 30px;
+    top: 0%;
+    z-index: 1;
+    width: 45%;
+    margin-top: 28.5%;
+  }
+
+
+  #cv-home-social-bar-container {
+    position: relative;
+    z-index: 3;  
+
+  }
+
+  #cv-home-social-bar {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      margin-left: 50%;
+      margin-top: 25%;
+      font-size: 40px;
+      color: #000000;
+      background-color: #ffffff;
+      width: 250px;
+      height: 80px;
+  }
+  
+  #cv-home-social-bar a {
+      color: #000000;
+      align-content: center;
+      font-size: 50px;
+  }
+
+  #cv-home-social-bar .fab {
+    padding: 6%;
+  }
+  #cv-home-social-bar a:hover {
+    color: #FFDBE4;
+    text-shadow: 1px 1px 2px #5B6574;
+  }
+

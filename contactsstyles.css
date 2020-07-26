@@ -1,0 +1,255 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height:auto;
+    width:auto;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Style the sidebar - fixed full height */
+  .sidebar {
+    height: 100%;
+    width: 75px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #FFDBE4;
+    overflow-x: hidden;
+  }
+  
+  /* Style sidebar links */
+  
+  .sidebar a {
+    padding: 25px 8px 25px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #5B6574;
+  }
+  
+  /* Style the main content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 910px;
+    height: 100%;
+    align-items: flex-end;
+    align-content: stretch;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+  }
+  .column img {
+    object-fit:cover;
+   
+  }
+  
+  #bgleft {
+    position: relative;
+    margin-left: 75px;
+    padding: 0px;
+    border: none;
+    width: 894px; 
+    height: 100%; 
+    z-index: 1;
+  
+  }
+  .column {
+    background: #ffffff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* for Firefox */
+    min-height: 0;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+  
+  .container {
+    background: #ffffff;
+  
+    /* give the outermost container a predefined size */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 957px;
+    width: 890px;
+    display: flex;
+    flex-direction: column;
+    z-index: 6;
+  }
+  
+  .section {
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* for Firefox */
+    min-height: 0;
+    z-index: 6;
+  }
+  
+  .scrollable-content {
+    background: white;
+    flex-grow: 1;
+    
+    overflow: auto;
+    
+    /* for Firefox */
+    min-height: 0;
+  }
+  
+  #titleline { 
+    max-width: 10%;
+    background-color: #FFDBE4;
+    height:4px;
+    margin-bottom: 40px;
+  }
+
+  .infos {
+    margin-left: 40px;
+    margin-right: 80px;
+  }
+  
+  h1 { font-family: Raleway; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; margin-bottom: 20px; margin-top: 85px; } 
+  h2 { font-family: Raleway; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+  p { font-family: Raleway; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+  blockquote { display: block; text-align: right;  color:#5B6574; font-family: Raleway; font-size: 18px; font-style: italic; font-variant: normal; 
+    font-weight: 400; line-height: 30px; background-color: #ebebe0; margin-top: 40px; margin-bottom: 60px; margin-left: 0; margin-right: 0; padding: 40px; 
+    width: 90%} 
+  
+  
+  .block-cv1 {
+    border-top: 0.5px solid #ebebe0;
+  }
+  .block-cv1 .fas {
+    color: #5B6574;
+    font-size: 25px;
+    padding: 13px;
+  }
+  
+  .block-cv2 {
+    border-top: 0.5px solid #ebebe0;
+  }
+  .block-cv2 .fas {
+    color: #5B6574;
+    font-size: 25px;
+    padding: 13px;
+  }
+  
+  .block-cv3 {
+    border-top: 0.5px solid #ebebe0;
+    border-bottom: 0.5px solid #ebebe0;
+  }
+  .block-cv3 .fas {
+    color: #5B6574;
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .cv-left {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .cv-right {
+    display: inline-block;
+    text-align: right;
+    float: right;
+  }
+
+   /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 2px; /* Add a top margin */
+    margin-bottom: 30px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #5B6574;
+    color: white;
+    padding: 15px 23px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 150px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #FFDBE4;
+    text-shadow: 1px 1px 2px #5B6574;
+  }
+
+  .titre_info, .info {
+    display : inline-block;
+  }
+  .titre_info {
+    font-weight: 700;
+    color:#5B6574;
+  }
+  .info {
+    font-weight: 400;
+    color:#5B6574;
+  }  
+
+  #footer {
+    bottom: 0px;
+    right: 0px;
+    background-color: #ebebe0;
+    position: fixed;
+    z-index: 997;
+    height: 50px;
+    width: 50.75%;
+    align-content: baseline;
+  }
+
+  #footer a {
+    position: relative;
+    float: right;
+  }
+
+  #footer i {
+    font-size: 25px;
+    color: #5B6574;
+    padding: 13px;
+    margin-right: 80px;
+  }
+
+  #top {
+    width: 3px;
+    height: 3px;
+    position: relative;
+    top:0;
+    z-index: 999;
+  }
